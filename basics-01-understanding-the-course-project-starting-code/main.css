@@ -1,3 +1,8 @@
 section {
-    background: #ff1869
+    background: #ff1869;
+    font-family: Lato, sans-serif;
+}
+
+h1 {
+    color: white;
 }
