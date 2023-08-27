@@ -1,0 +1,27 @@
+h1 {
+    color: #0088d6;
+    font-family: 'Lato', sans-serif
+}
+
+.second-li-codes {
+    color: green;
+}
+
+code {
+    font-family: 'IBM Plex Mono', mono-space;
+    color: red
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+li + li {
+    background-color: black;
+    color: white;
+}
+
+ol > li {
+    background-color: black;
+    color: white;
+}

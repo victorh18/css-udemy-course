@@ -1,8 +1,17 @@
-section {
+#product-overview {
     background: #ff1869;
+   
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+#product-overview h1 {
+    color: white;
     font-family: Lato, sans-serif;
 }
 
-h1 {
-    color: white;
+.section-title {
+    color: #2ddf5c
 }
