@@ -1,10 +1,16 @@
+* {
+    box-sizing: border-box;
+}
+
 #product-overview {
     background: #ff1869;
-   
+    height: 528px;
+    padding: 10px;
 }
 
 body {
     font-family: 'Montserrat', sans-serif;
+    margin: 0px;
 }
 
 #product-overview h1 {
@@ -13,5 +19,13 @@ body {
 }
 
 .section-title {
-    color: #2ddf5c
+    color: #2ddf5c;
+}
+
+.main-header {
+    background: #2ddf5c;
+    padding: 0px 10px;
+    & li {
+        display: inline;
+    }
 }
