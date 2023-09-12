@@ -3,7 +3,7 @@
 }
 
 #product-overview {
-    background: #ff1869;
+    background: url("freedom.jpg");
     height: 528px;
     padding: 10px;
 }
@@ -20,6 +20,54 @@ body {
 
 .section-title {
     color: #2ddf5c;
+    text-align: center;
+}
+
+.plan {
+    display: inline-block;
+    vertical-align: middle;
+    background: #d5ffdc;
+    width: 30%;
+    padding: 16px;
+    margin: 8px;
+    text-align: center;
+}
+
+.plan__annotation {
+    background-color: rgb(255, 255, 255);
+    color: #19b84c;
+    border-radius: 5px;
+    padding: 5px 0px;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5)
+}
+
+.plan__features {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    & .plan__feature {
+        margin: 8px 0
+    }
+}
+
+.plan__title {
+    color: #0e4f1f
+}
+
+.plan__price {
+    color: #858585;
+}
+
+.plan--highlight {
+    background-color: #19b84c;
+    color: white;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+    & .plan__title {
+        color: white
+    }
+    & .plan__price {
+        color: #0e4f1f;
+    }
 }
 
 .main-header {
@@ -27,7 +75,39 @@ body {
     padding: 0px 10px;
     & li {
         display: inline-block;
+        & a {
+            margin-left: 10px;
+            color: #0e4f1f;
+            text-decoration: none;
+            font-weight: bold;
+            padding-bottom: 3px;
+        }
+        & a:hover, 
+          a:active {
+            color: white;
+            border-bottom: 5px solid white
+        }
+        & .cta {
+            color: white;
+            background-color: #ff1869;
+            border: none;
+            border-radius: 5px;
+            padding: 8px 16px;
+        }
+        .cta:hover {
+            color: #ff1869;
+            background-color: white;
+            border: none;
+        }
     }
+}
+
+.main-nav__item--cta a {
+    color: white;
+    background-color: #ff1869;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 16px;
 }
 
 .header-list {
