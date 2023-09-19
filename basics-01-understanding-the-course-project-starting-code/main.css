@@ -1,13 +1,17 @@
 #product-overview {
-    background: url("freedom.jpg");
+    background: url("images/freedom.jpg") left 10% bottom 20%/cover no-repeat border-box;
     height: 528px;
     padding: 10px;
+    margin-top: 50px;
+    position: relative
 }
-
 
 #product-overview h1 {
     color: white;
     font-family: Lato, sans-serif;
+    position: absolute;
+    bottom: 5%;
+    left: 3%;
 }
 
 .section-title {
