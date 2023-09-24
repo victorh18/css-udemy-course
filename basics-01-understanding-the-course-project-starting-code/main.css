@@ -1,8 +1,12 @@
+body::-webkit-scrollbar {
+    width: 0;
+}
+
 #product-overview {
-    background: linear-gradient(to top, rgba(80,68,18,0.6) 10%, transparent), url("images/freedom.jpg") left 10% bottom 20%/cover no-repeat border-box, #ff1869;
-    height: 528px;
-    padding: 10px;
-    margin-top: 50px;
+    background: linear-gradient(to top, rgba(80,68,18,0.6) 10%, transparent), url("images/freedom.jpg") left 10% bottom 70%/cover no-repeat border-box, #ff1869;
+    height: 40vh;
+    width: 100vw;
+    margin-top: 3.125rem;
     position: relative
 }
 
@@ -31,8 +35,8 @@
     vertical-align: middle;
     background: #d5ffdc;
     width: 30%;
-    padding: 16px;
-    margin: 8px;
+    padding: 1rem;
+    margin: .5rem;
     text-align: center;
     
 }
@@ -41,7 +45,7 @@
     background-color: rgb(255, 255, 255);
     color: #19b84c;
     border-radius: 5px;
-    padding: 5px 0px;
+    padding: .3125rem 0px;
     box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5)
 }
 
@@ -50,7 +54,7 @@
     margin: 0;
     padding: 0;
     & .plan__feature {
-        margin: 8px 0
+        margin: .5rem 0
     }
 }
 
@@ -79,8 +83,8 @@
     color: white;
     font: inherit;
     border: 1.5px solid #0e4f1f;
-    padding: 8px;
-    border-radius: 8px;
+    padding: .5rem;
+    border-radius: .5rem;
     font-weight: bold;
     cursor: pointer;
 }
@@ -98,11 +102,11 @@
 
 #key-features {
     background-color: #ff1869;
-    margin-top: 80px;
+    margin-top: 5rem;
     & .section-title {
         color: white;
-        margin: 32px;
-        padding: 16px;
+        margin: 2rem;
+        padding: 1rem;
     }
 }
 
@@ -122,7 +126,7 @@
 .key-feature__description {
     color: white;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 1.25rem;
 }
 
 .key-feature__image {
@@ -132,5 +136,54 @@
     border: 2px solid #424242;
     border-radius: 50%;
     margin: auto;
-    padding: 20px;
+    padding: 1.25rem;
 }
+
+.modal {
+    position: fixed;
+    display: none;
+    z-index: 200;
+    top: 20%;
+    left: 30%;
+    width: 40%;
+    background: white;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+  }
+  
+  .modal__title {
+    text-align: center;
+    margin: 0 0 1rem 0;
+  }
+  
+  .modal__actions {
+    text-align: center;
+  }
+  
+  .modal__action {
+    border: 1px solid #0e4f1f;
+    background: #0e4f1f;
+    text-decoration: none;
+    color: white;
+    font: inherit;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+  }
+  
+  .modal__action:hover,
+  .modal__action:active {
+    background: #2ddf5c;
+    border-color: #2ddf5c;
+  }
+  
+  .modal__action--negative {
+    background: red;
+    border-color: red;
+  }
+  
+  .modal__action--negative:hover,
+  .modal__action--negative:active {
+    background: #ff5454;
+    border-color: #ff5454;
+  }
