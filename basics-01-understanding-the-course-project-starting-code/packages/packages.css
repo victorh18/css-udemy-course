@@ -41,7 +41,7 @@ main {
     position: absolute;
     right: 0;
     top: 0;
-    margin: 1.25rem;
+    margin: 0.3rem 1.25rem;
     padding: 0.5rem;
     font-size: 0.75rem;
     background-color: #ff5454;
@@ -50,7 +50,7 @@ main {
 
 .plan__description {
     color: #0e4f1f;
-    border: 1px solid #0e4f1f;
+    border: 0.2rem solid #0e4f1f;
     padding: 1rem;
     background-color: white;
     font-size: 1.25rem
@@ -64,9 +64,7 @@ main {
     z-index: 1;
 }
 
-.plan--plus:hover {
-    border-left: none;
-}
+
 
 .plan--free {
     background-color: rgba(232, 248, 236, 0.903);
@@ -74,9 +72,7 @@ main {
     float: right;
 }
 
-.plan--free:hover {
-    border-right: none;
-}
+
 
 .clearfix {
     clear: both;
@@ -92,4 +88,29 @@ main {
 
 .plan--premium:hover {
     border-left: none;
+}
+
+@media (min-width: 40rem) {
+    main {
+        max-width: 1500px;
+        margin: 3.5 auto;
+    }
+
+    .plan {
+        border: 0.2rem solid #0e4f1f; 
+    }
+
+    .plan:hover {
+        border: 0.2rem solid #FE5B4A;
+    }
+}
+
+@media (max-width: 1500px) {
+    .plan--free:hover {
+        border-right: none;
+    }
+
+    .plan--plus:hover {
+        border-left: none;
+    }
 }

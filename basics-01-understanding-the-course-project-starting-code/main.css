@@ -6,7 +6,7 @@ body::-webkit-scrollbar {
     background: linear-gradient(to top, rgba(80,68,18,0.6) 10%, transparent), url("images/freedom.jpg") left 10% bottom 70%/cover no-repeat border-box, #ff1869;
     height: 40vh;
     width: 100vw;
-    margin-top: 3.125rem;
+    margin-top: 2rem;
     position: relative
 }
 
@@ -16,6 +16,30 @@ body::-webkit-scrollbar {
     position: absolute;
     bottom: 5%;
     left: 3%;
+    font-size: 2rem;
+}
+
+@media (min-width: 40rem) {
+    #product-overview {
+        background-position: 50% 35%;
+        height: 60vh;
+        margin-top: 3.125rem
+    }
+
+    #product-overview h1 {
+        font-size: 3rem;
+    }
+}
+
+@media (min-width: 60rem) {
+    #product-overview {
+        background-position: 50% 35%;
+        height: 60vh;
+    }
+
+    #product-overview h1 {
+        font-size: 5rem;
+    }
 }
 
 .section-title {
@@ -24,19 +48,19 @@ body::-webkit-scrollbar {
     
 }
 
-.plan__list {
+/* .plan__list {
     width: 80%;
     margin: auto;
     text-align: center
-}
+} */
 
 .plan {
-    display: inline-block;
-    vertical-align: middle;
+    /* display: inline-block; */
+    /* vertical-align: middle; */
     background: #d5ffdc;
-    width: 30%;
+    width: 100%;
     padding: 1rem;
-    margin: .5rem;
+    margin: .5rem 0;
     text-align: center;
     
 }
@@ -58,6 +82,28 @@ body::-webkit-scrollbar {
     }
 }
 
+@media (min-width: 40rem) {
+    .plan__list {
+        width: 100%;
+        text-align: center;
+        
+    }
+
+    .plan {
+        width: 30%;
+        display: inline-block;
+        vertical-align: middle;
+        min-width: 13rem;
+        max-width: 25rem;
+        
+    }
+
+    .plan--highlight {
+        box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+
+    }
+}
+
 .plan__title {
     color: #0e4f1f
 }
@@ -69,24 +115,13 @@ body::-webkit-scrollbar {
 .plan--highlight {
     background-color: #19b84c;
     color: white;
-    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+    /* box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5); */
     & .plan__title {
         color: white
     }
     & .plan__price {
         color: #0e4f1f;
     }
-}
-
-.button {
-    background: #0e4f1f;
-    color: white;
-    font: inherit;
-    border: 1.5px solid #0e4f1f;
-    padding: .5rem;
-    border-radius: .5rem;
-    font-weight: bold;
-    cursor: pointer;
 }
 
 .button:hover,
@@ -115,12 +150,20 @@ body::-webkit-scrollbar {
     padding: 0;
     margin: 0;
     text-align: center;
+    max-width: 44rem;
+    margin: auto;
 }
 
-.key-feature {
-    display: inline-block;
-    width: 32%;
-    vertical-align: top;
+.key-feature:last-of-type {
+    padding-bottom: 1rem;
+}
+
+@media (min-width: 40rem) {
+    .key-feature {
+        display: inline-block;
+        width: 32%;
+        vertical-align: top;
+    }
 }
 
 .key-feature__description {
