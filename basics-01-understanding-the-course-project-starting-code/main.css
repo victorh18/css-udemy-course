@@ -6,7 +6,7 @@ body::-webkit-scrollbar {
     background: linear-gradient(to top, rgba(80,68,18,0.6) 10%, transparent), url("images/freedom.jpg") left 10% bottom 70%/cover no-repeat border-box, #ff1869;
     height: 40vh;
     width: 100vw;
-    margin-top: 2rem;
+    /* margin-top: 1rem; */
     position: relative
 }
 
@@ -23,7 +23,7 @@ body::-webkit-scrollbar {
     #product-overview {
         background-position: 50% 35%;
         height: 60vh;
-        margin-top: 3.125rem
+        /* margin-top: 3.125rem */
     }
 
     #product-overview h1 {

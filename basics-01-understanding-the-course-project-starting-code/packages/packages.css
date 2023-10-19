@@ -1,3 +1,14 @@
+@font-face {
+    font-family: 'SpaceMono';
+    src: url("SpaceMono-Regular.ttf");
+}
+
+@font-face {
+    font-family: 'SpaceMono';
+    src: url("SpaceMono-Bold.ttf");
+    font-weight: bold;
+}
+
 main {
     padding-top: 2rem;
 }
@@ -53,7 +64,7 @@ main {
     border: 0.2rem solid #0e4f1f;
     padding: 1rem;
     background-color: white;
-    font-size: 1.25rem
+    font: 700 1.2rem "SpaceMono", sans-serif
 }
 
 .plan--plus {
@@ -93,7 +104,7 @@ main {
 @media (min-width: 40rem) {
     main {
         max-width: 1500px;
-        margin: 3.5 auto;
+        margin: 3.5rem auto;
     }
 
     .plan {
