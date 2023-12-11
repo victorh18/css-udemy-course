@@ -48,21 +48,19 @@ body::-webkit-scrollbar {
     
 }
 
-/* .plan__list {
-    width: 80%;
-    margin: auto;
-    text-align: center
-} */
+.plan__list {
+    display: flex;
+    flex-direction: column;
+}
 
 .plan {
-    /* display: inline-block; */
-    /* vertical-align: middle; */
     background: #d5ffdc;
     width: 100%;
     padding: 1rem;
     margin: .5rem 0;
     text-align: center;
-    
+    display: flex;
+    flex-direction: column;
 }
 
 .plan__annotation {
@@ -86,30 +84,45 @@ body::-webkit-scrollbar {
     .plan__list {
         width: 100%;
         text-align: center;
-        
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
     }
 
     .plan {
         width: 30%;
-        display: inline-block;
+        height: 25rem;
         vertical-align: middle;
         min-width: 13rem;
         max-width: 25rem;
-        
+        margin: 0 0.3rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     .plan--highlight {
         box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+        height: 28rem;
+    }
 
+    .article h3 {
+        margin: 0.5rem;
+    }
+
+    .plan__annotation {
+        width: 100%;
     }
 }
 
 .plan__title {
-    color: #0e4f1f
+    color: #0e4f1f;
+    margin: 0.5rem;
 }
 
 .plan__price {
     color: #858585;
+    margin: 0.5rem;
 }
 
 .plan--highlight {
@@ -149,20 +162,29 @@ body::-webkit-scrollbar {
     list-style: none;
     padding: 0;
     margin: 0;
-    text-align: center;
-    max-width: 44rem;
-    margin: auto;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    align-items: center;
 }
 
-.key-feature:last-of-type {
-    padding-bottom: 1rem;
+.key-feature {
+    /* width: 32%; */
+    /* flex: 1; */
+    margin: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    vertical-align: top;
+
 }
+
 
 @media (min-width: 40rem) {
-    .key-feature {
-        display: inline-block;
-        width: 32%;
-        vertical-align: top;
+
+    .key-feature__list {
+        flex-direction: row;
+        justify-content: center;
     }
 }
 
@@ -170,6 +192,7 @@ body::-webkit-scrollbar {
     color: white;
     font-weight: bold;
     font-size: 1.25rem;
+    text-align: center;
 }
 
 .key-feature__image {
@@ -178,13 +201,15 @@ body::-webkit-scrollbar {
     height: 128px;
     border: 2px solid #424242;
     border-radius: 50%;
-    margin: auto;
     padding: 1.25rem;
 }
 
 .modal {
     position: fixed;
     display: none;
+    transform: translateY(-3rem);
+    opacity: 0;
+    transition: opacity 200ms ease-out, transform 200ms ease-out;
     z-index: 200;
     top: 20%;
     left: 30%;

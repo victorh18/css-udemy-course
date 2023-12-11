@@ -28,10 +28,12 @@ main {
     padding: 1rem;
     margin: 0.5rem 0;
     position: relative;
+    overflow: hidden;
     & a {
         text-decoration: none;
         color: black;
     }
+    
 }
 
 .plan:hover,
@@ -57,6 +59,9 @@ main {
     font-size: 0.75rem;
     background-color: #ff5454;
     z-index: 10;
+    width: 15rem;
+    transform:  translateX(6rem) translateY(2rem) rotateZ(45deg);
+    text-align: center;
 }
 
 .plan__description {
